@@ -1,4 +1,4 @@
-# 8Bit Alu written in SystemVerilog
+# 8Bit ALU written in SystemVerilog
 written with **No AI**!
 
 ## current implementations:
@@ -8,3 +8,5 @@ written with **No AI**!
 - Full Adder *f0(a,b,carry_in,sum,carry_out);*
     - working full adder utilizing 2x half adder
     - working testbench for every input-combination
+- 8 Bit Ripple Carry Adder *rc0(a,b,carry_in,sum,carry_out);*
+    - working 8bit ripple carry adder utilizing 8x full adder
