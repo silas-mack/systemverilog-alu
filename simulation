@@ -1,0 +1,25 @@
+#! /usr/bin/vvp
+:ivl_version "13.0 (stable)" "(v13_0)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib64/ivl/system.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib64/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib64/ivl/va_math.vpi";
+:vpi_module "/usr/lib64/ivl/v2009.vpi";
+S_0x556f2e4e5ea0 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x556f2e4e5550 .scope module, "half_adder" "half_adder" 3 1;
+ .timescale 0 0;
+    .scope S_0x556f2e4e5550;
+T_0 ;
+    %vpi_call/w 3 4 "$display", "hello world" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "-";
+    "half_adder.sv";
