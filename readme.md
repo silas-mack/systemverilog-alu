@@ -11,3 +11,5 @@ written with **No AI**!
 - 8 Bit Ripple Carry Adder *rca0(a,b,carry_in,sum,carry_out);*
     - working 8bit ripple carry adder utilizing 8x full adder
     - working testbench for every input-combination
+- 8 Bit ALU
+    - working 8Bit ALU utilizing the ripple carry adder
