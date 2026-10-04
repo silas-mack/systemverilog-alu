@@ -13,3 +13,4 @@ written with **No AI**!
     - working testbench for every input-combination
 - 8 Bit ALU
     - working 8Bit ALU utilizing the ripple carry adder
+    - working semi 8Bit ALU testbench
