@@ -1,10 +1,10 @@
-module rc_adder(a,b,carry_in,sum,carry_out);
+module rc_adder(a,b,carry_in,sum,carry_out,carry7);
 
     input logic[7:0] a;
     input logic[7:0] b;
     input logic carry_in;
     output logic[7:0] sum;
-    output logic carry_out;
+    output logic carry_out, carry7;
 
     logic [8:0]carry;
     assign carry[0] = carry_in;
@@ -15,6 +15,7 @@ module rc_adder(a,b,carry_in,sum,carry_out);
             full_adder fa0(a[i],b[i],carry[i],sum[i],carry[i+1]);
         end
     endgenerate
+    assign carry7 = carry[7];
     assign carry_out = carry[8];
 
 endmodule: rc_adder
